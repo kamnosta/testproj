@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<h1>hello</h1>
+		<p id="ptest"></p>
+
+		<script>
+			window.onload = function () {
+				let target = document.getElementById("ptest");
+				fetchthat().then((data) => target.innerText = data)
+			}
+
+			function fetchthat() {
+				return fetch("/data.json")
+					.then((res) => res.json())
+					.then((json) => json["data"])
+			};
+		</script>
+	</body>
+</html>
