@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	
+	{%- include head.html -%}
+
+	<body>
+		{%- include header.html -%}
+
+		<main class="page-content" aria-label="Content">
+			<div class="wrapper">
+				{{ content }}
+			</div>
+		</main>
+
+		{%- include footer.html -%}
+
+		<style>
+			body {
+				background-color: black;
+				color: white;
+				font-family: sans-serif;
+				text-align: center;
+			}
+
+			a {
+				color: white;
+			}
+
+			ul {
+				display: inline-block;
+				list-style-type: "- ";
+			}
+
+			li {
+				text-align: left;
+			}
+
+			body {
+				display: flex;
+				min-height: 100vh;
+				flex-direction: column;
+				overflow-wrap: break-word;
+			}
+
+			img {
+				max-width: 100%;
+				vertical-align: middle;
+			}
+
+			.wrapper {
+				margin-right: auto;
+				margin-left: auto;
+			}
+		</style>
+	</body>
+</html>
