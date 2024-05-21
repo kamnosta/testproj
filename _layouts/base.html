@@ -30,8 +30,13 @@
 				font-family: "Courier New", Courier, sans-serif;
 
 				font-size: 125%;
-				max-width: 64em;
+				
 				overflow-wrap: break-word;
+
+				max-width: 32em;
+				@media (min-width: 1440px) {
+					max-width: 64em;
+				}
 			}
 
 			a {
