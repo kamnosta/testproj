@@ -30,6 +30,7 @@ timezone: Etc/UTC
 github: [metadata] #Why is this needed...
 
 date_format: "%y.%m.%d"
+permalink: /:categories/:short_year:month:day-:title
 
 # Build settings
 plugins:
