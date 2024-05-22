@@ -28,6 +28,7 @@ url: "https://kamnosta.net" # the base hostname & protocol for your site, e.g. h
 timezone: Etc/UTC
 
 github: [metadata] #Why is this needed...
+emptyarray: []
 
 date_format: "%y.%m.%d"
 permalink: /:categories/:short_year:month:day-:title
