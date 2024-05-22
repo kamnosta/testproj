@@ -1,0 +1,11 @@
+---
+layout: post
+---
+
+{% for imgname in page.imgs %}
+	<img alt="{{ imgname }}" src="/assets/imgs/{{ imgname }}">
+{% endfor %}
+
+<div>
+	{{ content }}
+</div>
