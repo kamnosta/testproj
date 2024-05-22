@@ -33,6 +33,18 @@ emptyarray: []
 date_format: "%y.%m.%d"
 permalink: /:categories/:short_year:month:day-:title
 
+collections:
+  arts:
+      output: true
+      permalink: /:collection/:short_year:month:day-:title
+
+defaults:
+  - scope:
+      path: ""
+      type: arts
+    values:
+      layout: art
+
 # Build settings
 plugins:
   - jekyll-feed

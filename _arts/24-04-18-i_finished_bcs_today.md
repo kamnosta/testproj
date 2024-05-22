@@ -1,9 +1,5 @@
 ---
-layout: art
-categories: arts
-
 title: I Finished BCS Today
-
 ---
 
 And I have an unprepared exam in 4 days<br>

@@ -1,7 +1,4 @@
 ---
-layout: art
-categories: arts
-
 title: Post This Cat
 ---
 

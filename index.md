@@ -1,5 +1,6 @@
 ---
 layout: home
+#targets: site.arts
 ---
 
 <div>

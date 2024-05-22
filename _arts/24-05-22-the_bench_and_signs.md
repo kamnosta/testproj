@@ -1,7 +1,4 @@
 ---
-layout: art
-categories: arts
-
 title: The Bench and Signs
 ---
 

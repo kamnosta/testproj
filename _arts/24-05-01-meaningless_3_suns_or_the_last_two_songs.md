@@ -1,7 +1,4 @@
 ---
-layout: art
-categories: arts
-
 title: Meaningless 3 Suns, or the Last Two Songs
 ---
 
