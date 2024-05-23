@@ -31,12 +31,12 @@ github: [metadata] #Why is this needed...
 emptyarray: []
 
 date_format: "%y.%m.%d"
-permalink: /:categories/:short_year:month:day-:title
+permalink: /:categories/:short_year:month:day-:slug
 
 collections:
   arts:
       output: true
-      permalink: /:collection/:short_year:month:day-:title
+      permalink: /:collection/:short_year:month:day-:slug
 
 defaults:
   - scope:
