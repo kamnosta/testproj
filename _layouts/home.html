@@ -6,21 +6,20 @@ layout: base
 
 	{{ content }}
 	
-	<ul>
-		{%- assign target_collections = site.home_cols %}
-		{%- if page.target_collections -%}
-			{%- assign target_collections = page.target_collections -%}
+	{%- assign target_collections = site.home_cols %}
+	{%- if page.target_collections -%}
+		{%- assign target_collections = page.target_collections -%}
+	{%- endif -%}
+
+	{%- for colname in target_collections -%}
+		{%- assign col = site.collections | where: "label", colname | first %}
+		<h2 class="col-label"><a class="col-link" href="/{{ col.label }}/">{{ col.label }}</a></h2>
+
+		{%- if col.desc != nil -%}
+			<p class="col-desc">{{ col.desc }}</p>
 		{%- endif -%}
 
-		{%- for colname in target_collections -%}
-			{%- assign col = site.collections | where: "label", colname | first %}
-			<h2 class="col-label"><a class="col-link" href="/{{ col.label }}/">{{ col.label }}</a></h2>
-
-			{%- if col.desc != nil -%}
-				<p class="col-desc">{{ col.desc }}</p>
-			{%- endif -%}
-			<br>
-
+		<ul class="docs-ul">
 			{%- assign docs = col.docs -%}
 			{%- if col.order_reverse -%}
 				{%- assign docs = docs | reverse -%}
@@ -34,8 +33,8 @@ layout: base
 				</li>
 			{%- endfor -%}
 			<br>
-		{%- endfor -%}
-	</ul>
+		</ul>
+	{%- endfor -%}
 </div>
 
 <style>
@@ -61,5 +60,9 @@ layout: base
 
 	.post-link {
 		text-decoration: none;
+	}
+
+	.docs-ul {
+		margin-top: 0.3em;
 	}
 </style>
