@@ -1,0 +1,52 @@
+<div class="nav">
+	<p class="nav-divider-p">- -</p>
+
+	<p class="col-label"><a href="/{{ page.collection }}/">{{ page.collection }}</a></p>
+
+	{% assign prev = page.previous %}
+	{% assign next = page.next %}
+	
+	{% if prev != nil %}
+		<div class="prev">
+			<span class="navlabel">&lt; </span>
+			<a class="post-link" href="{{ prev.url | relative_url }}">
+				<p style="display:inline">{{ prev.title | escape }}</p>
+				<span class="post-meta">{{ prev.date | date: site.date_format }}</span>
+			</a>
+		</div>
+	{% endif %}
+	{% if next != nil %}
+		<div class="next">
+			<a class="post-link" href="{{ next.url | relative_url }}">
+				<span class="post-meta">{{ next.date | date: site.date_format }}</span>
+				<p style="display:inline">{{ next.title | escape }}</p>
+			</a>
+			<span class="navlabel"> &gt;</span>
+		</div>
+	{% endif %}
+</div>
+
+<style>
+	.nav {
+		font-size: 90%;
+	}
+
+	.prev {
+		text-align: left;
+	}
+	.next {
+		text-align: right;
+	}
+
+	.navlabel, .post-meta {
+		font-size: 90%;
+	}
+
+	.nav-divider-p {
+		margin-top: 3em;
+	}
+
+	a {
+		text-decoration: none;
+	}
+</style>
