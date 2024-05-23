@@ -42,12 +42,15 @@ collections:
   illusts:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
   comics:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
   schramble:
     output: true
     permalink: /:collection/:slug
+    order_reverse: false
 
 defaults:
   - scope:
