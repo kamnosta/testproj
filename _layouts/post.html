@@ -9,12 +9,6 @@ layout: base
 		<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
 			{{ page.date | date: site.date_format }}
 		</time>
-		{%- if page.modified_date -%}
-			~ 
-			<time class="dt-modified" datetime="{{ page.modified_date | date_to_xmlschema }}" itemprop="dateModified">
-			{{ mdate | date: site.date_format }}
-			</time>
-		{%- endif -%}
 	</p>
 </header>
 
@@ -37,10 +31,7 @@ layout: base
 		font-size: 90%;
 	}
 
-	@media (orientation: landscape) {
-		.content-div img {
-			max-width: 85%;
-			max-height: 85%;
-		}
+	.content-div img {
+		max-height: 85vh;
 	}
 </style>
