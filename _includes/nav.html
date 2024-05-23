@@ -1,7 +1,7 @@
 <div class="nav">
 	<p class="nav-divider-p">- -</p>
 
-	<p class="col-label"><a href="/{{ page.collection }}/">{{ page.collection }}</a></p>
+	<p class="col-label"><a class="col-link" href="/{{ page.collection }}/">{{ page.collection }}</a></p>
 
 	{% assign prev = page.previous %}
 	{% assign next = page.next %}
@@ -46,7 +46,7 @@
 		margin-top: 3em;
 	}
 
-	a {
+	.nav a {
 		text-decoration: none;
 	}
 </style>

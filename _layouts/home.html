@@ -14,7 +14,7 @@ layout: base
 
 		{%- for colname in target_collections -%}
 			{%- assign col = site.collections | where: "label", colname | first %}
-			<h2 class="col-label"><a href="/{{ col.label }}/">{{ col.label }}</a></h2>
+			<h2 class="col-label"><a class="col-link" href="/{{ col.label }}/">{{ col.label }}</a></h2>
 
 			{%- if col.desc != nil -%}
 				<p class="col-desc">{{ col.desc }}</p>
