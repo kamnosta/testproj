@@ -27,21 +27,32 @@ url: "https://kamnosta.net" # the base hostname & protocol for your site, e.g. h
 
 timezone: Etc/UTC
 
-github: [metadata] #Why is this needed...
+#github: [metadata] #Why is this needed...
 emptyarray: []
+home_cols:
+  - illusts
+  - comics
 
 date_format: "%y.%m.%d"
 permalink: /:categories/:short_year:month:day-:slug
 
 collections:
-  arts:
-      output: true
-      permalink: /:collection/:short_year:month:day-:slug
+  illusts:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+  comics:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
 
 defaults:
   - scope:
       path: ""
-      type: arts
+      type: illusts
+    values:
+      layout: art
+  - scope:
+      path: ""
+      type: comics
     values:
       layout: art
 
