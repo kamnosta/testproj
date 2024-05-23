@@ -32,8 +32,10 @@ emptyarray: []
 home_cols:
   - illusts
   - comics
+  - schramble
 
 date_format: "%y.%m.%d"
+date_format_imgs: "%y%m%d"
 permalink: /:categories/:short_year:month:day-:slug
 
 collections:
@@ -43,6 +45,9 @@ collections:
   comics:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
+  schramble:
+    output: true
+    permalink: /:collection/:slug
 
 defaults:
   - scope:
@@ -55,6 +60,11 @@ defaults:
       type: comics
     values:
       layout: art
+  - scope:
+      path: ""
+      type: schramble
+    values:
+      layout: schramble
 
 # Build settings
 plugins:
