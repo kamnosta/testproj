@@ -51,6 +51,12 @@ collections:
     output: true
     permalink: /:collection/:slug
     order_reverse: false
+    desc: "the aimless"
+  withcolor:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: false
+    desc: "drawings from 24.02.03 - 24.03.27"
 
 defaults:
   - scope:
@@ -68,6 +74,11 @@ defaults:
       type: schramble
     values:
       layout: schramble
+  - scope:
+      path: ""
+      type: withcolor
+    values:
+      layout: art
 
 # Build settings
 plugins:

@@ -9,12 +9,17 @@ layout: base
 	<ul>
 		{%- assign target_collections = site.home_cols %}
 		{%- if page.target_collections -%}
-			{%- comment -%} target_collections = page.target_collections {%- endcomment -%}
+			{%- assign target_collections = page.target_collections -%}
 		{%- endif -%}
 
 		{%- for colname in target_collections -%}
 			{%- assign col = site.collections | where: "label", colname | first %}
-			<h2>{{ col.label }}</h2>
+			<h2 class="col-label"><a href="/{{ col.label }}/">{{ col.label }}</a></h2>
+
+			{%- if col.desc != nil -%}
+				<p class="col-desc">{{ col.desc }}</p>
+			{%- endif -%}
+			<br>
 
 			{%- assign docs = col.docs -%}
 			{%- if col.order_reverse -%}
@@ -34,5 +39,14 @@ layout: base
 <style>
 	.post-meta {
 		font-size: 90%;
+	}
+
+	.col-label {
+		margin: 0.25em;
+	}
+	
+	.col-desc {
+		font-size: 90%;
+		margin: 0;
 	}
 </style>
