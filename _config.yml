@@ -43,20 +43,25 @@ collections:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
     order_reverse: true
+    thumbnail_include: "thumbnail_art.html"
   comics:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
     order_reverse: true
+    has_thumbnails: true
+    thumbnail_include: "thumbnail_art.html"
   schramble:
     output: true
     permalink: /:collection/:slug
     order_reverse: false
     desc: "the aimless"
+    thumbnail_include: "thumbnail_schramble.html"
   withcolor:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
     order_reverse: false
     desc: "drawings from 24.02.03 - 24.03.27"
+    thumbnail_include: null
 
 defaults:
   - scope:

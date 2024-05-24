@@ -1,0 +1,10 @@
+{% comment %} argument: page {% endcomment %}
+
+{% assign doc = include.doc %}
+{% assign colname = doc.collection %}
+{% assign col = site.collections | where: "label", colname | first %}
+{% assign thumbnail_include = col.thumbnail_include %}
+
+{% if thumbnail_include != nil %}
+	{% include {{ thumbnail_include }} page=doc %}
+{% endif %}
