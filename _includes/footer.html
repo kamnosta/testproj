@@ -1,6 +1,10 @@
 <footer>
 	<div>
-		<p id="two-astrs-p"><a href="/withcolor/">* *</a></p>
+		{% if page.url == "/" %}
+			<p id="two-astrs-p"><a href="/withcolor/">* *</a></p>
+		{% else %}
+			<p id="two-astrs-p">* *</p>
+		{% endif %}
 
 		<ul>
 			<li><a href="https://www.deviantart.com/kamnosta">DA</a><br></li>
