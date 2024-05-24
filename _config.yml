@@ -33,6 +33,7 @@ home_cols:
   - illusts
   - comics
   - schramble
+  - posts
 
 date_format: "%y.%m.%d"
 date_format_imgs: "%y%m%d"
