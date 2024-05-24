@@ -5,25 +5,53 @@
 
 	{% assign prev = page.previous %}
 	{% assign next = page.next %}
+
+	{% assign col = site.collections | where: "label", page.collection | first %}
+	{% assign thumbnail_include = col.thumbnail_include %}
 	
-	{% if prev != nil %}
-		<div class="prev">
-			<span class="navlabel">&lt; </span>
-			<a class="post-link" href="{{ prev.url | relative_url }}">
-				<p style="display:inline">{{ prev.title | escape }}</p>
-				<span class="post-meta">{{ prev.date | date: site.date_format }}</span>
+	<div class="prevnext-container">
+		{% if prev != nil %}
+			<a class="nav-post-link" href="{{ prev.url | relative_url }}">
+				<div class="prev">
+					<span class="navlabel">&lt; </span>
+
+					{% if thumbnail_include != nil %}
+						<div class="nav-thumbnail-img-container">
+							{% include thumbnail.html doc=prev %}
+						</div>
+					{% endif %}
+
+					<div class="nav-title-meta-container">
+						<p>{{ prev.title | escape }}</p>
+						<span class="post-meta">{{ prev.date | date: site.date_format }}</span>
+					</div>
+				</div>
 			</a>
-		</div>
-	{% endif %}
-	{% if next != nil %}
-		<div class="next">
-			<a class="post-link" href="{{ next.url | relative_url }}">
-				<span class="post-meta">{{ next.date | date: site.date_format }}</span>
-				<p style="display:inline">{{ next.title | escape }}</p>
+		{% else %}
+			<div class="nav-post-link dummy"></div>
+		{% endif %}
+
+		{% if next != nil %}
+			<a class="nav-post-link" href="{{ next.url | relative_url }}">
+				<div class="next">
+					<div class="nav-title-meta-container">
+						<p>{{ next.title | escape }}</p>
+						<span class="post-meta">{{ next.date | date: site.date_format }}</span>
+					</div>
+
+					{% if thumbnail_include != nil %}
+						<div class="nav-thumbnail-img-container">				
+							{% include thumbnail.html doc=next %}
+						</div>
+					{% endif %}
+
+					<span class="navlabel"> &gt;</span>
+				</div>
 			</a>
-			<span class="navlabel"> &gt;</span>
-		</div>
-	{% endif %}
+		{% else %}
+			<div class="nav-post-link dummy"></div>
+		{% endif %}
+	</div>
 </div>
 
 <style>
@@ -31,15 +59,54 @@
 		font-size: 90%;
 	}
 
+	.prevnext-container {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	.nav-post-link {
+		display: table-cell;
+		width: 100%;
+	}
+
+	.prev, .next {
+		display: flex;
+		margin-top: 0;
+		height: 100%;
+	}
+
 	.prev {
 		text-align: left;
 	}
 	.next {
 		text-align: right;
+		justify-content: flex-end;
+	}
+
+	.nav-thumbnail-img-container {
+		width: 4em;
+		height: 4em;
+		margin: 0.5em;
+
+		flex-shrink: 0;
+	}
+
+	.nav-title-meta-container {
+		margin: 0.2em;
+		min-width: 0;
+	}
+
+	.nav-title-meta-container p {
+		overflow-wrap: break-word;
 	}
 
 	.navlabel, .post-meta {
 		font-size: 90%;
+	}
+
+	.navlabel {
+		margin: 0.25em;
 	}
 
 	.nav-divider-p {
