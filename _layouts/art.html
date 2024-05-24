@@ -2,16 +2,7 @@
 layout: post
 ---
 
-{% if page.imgs %}
-	{% assign imgs = page.imgs %}
-{% else %}
-	{% assign img = page.url | split: "/" | last | replace: "-", "_" | append: ".png" %}
-	{% assign imgs = site.emptyarray | push: img %}
-{% endif %}
-
-{% for imgname in imgs %}
-	<img alt="{{ imgname }}" src="/imgs/{{ imgname }}">
-{% endfor %}
+{% include img_art.html %}
 
 <p>-</p>
 

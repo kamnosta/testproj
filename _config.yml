@@ -85,6 +85,8 @@ defaults:
     values:
       layout: art
 
+github: [metadata]
+
 # Build settings
 plugins:
   - jekyll-feed

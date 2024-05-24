@@ -1,0 +1,10 @@
+{% comment %} parameter: page {% endcomment %}
+
+{% if include.page %}
+	{% assign target_page = include.page %}
+{% else %}
+	{% assign target_page = page %}
+{% endif %}
+
+{% assign imgname = target_page.url | split: "/" | last | replace: "-", "_" | append: ".png" %}
+<img alt="{{ imgname }}" src="/imgs/{{ imgname }}">

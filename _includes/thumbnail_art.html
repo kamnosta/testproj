@@ -1,4 +1,4 @@
-{% comment %} argument: page {% endcomment %}
+{% comment %} parameter: page {% endcomment %}
 
 {% assign thumbnailname = include.page.url | split: "/" | last | replace: "-", "_" | append: "-thumbnail.png" %}
 <img class="thumbnail" alt="{{ thumbnailname }}" src="/thumbnails/{{ thumbnailname }}">
