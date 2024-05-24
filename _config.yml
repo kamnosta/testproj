@@ -87,6 +87,8 @@ defaults:
       layout: art
 
 github: [metadata]
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 
 # Build settings
 plugins:
