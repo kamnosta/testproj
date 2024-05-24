@@ -37,7 +37,7 @@ home_cols:
 
 date_format: "%y.%m.%d"
 date_format_imgs: "%y%m%d"
-permalink: /:categories/:short_year:month:day-:slug
+permalink: /:collection/:short_year:month:day-:slug
 
 collections:
   illusts:
