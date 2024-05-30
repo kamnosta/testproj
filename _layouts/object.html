@@ -1,0 +1,20 @@
+---
+layout: post
+---
+
+{% assign imgname = page.url | split: "/" | last | replace: "-", "_" | append: ".jpg" %}
+{% assign vidname = imgname | replace: ".jpg", ".mp4" %}
+<img alt="{{ imgname }}" src="/imgs_objects/{{ imgname }}">
+<p></p>
+<video autoplay loop controls>
+	{{ vidname }}
+	<source src="/imgs_objects/{{ vidname }}" type="video/mp4" />
+</video>
+
+<p>-</p>
+
+<div>
+	{{ content }}
+</div>
+
+{% include nav.html %}

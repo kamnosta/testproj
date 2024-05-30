@@ -33,6 +33,7 @@ home_cols:
   - illusts
   - comics
   - schramble
+  - objects
   - posts
 
 date_format: "%y.%m.%d"
@@ -63,6 +64,13 @@ collections:
     order_reverse: false
     desc: "drawings from 24.02.03 - 24.03.27"
     thumbnail_include: null
+  objects:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    thumbnail_include: "thumbnail_object.html"
+  posts:
+    order_reverse: true
 
 defaults:
   - scope:
@@ -85,6 +93,11 @@ defaults:
       type: withcolor
     values:
       layout: art
+  - scope:
+      path: ""
+      type: objects
+    values:
+      layout: object
 
 github: [metadata]
 kramdown:
