@@ -6,7 +6,7 @@ layout: post
 {% assign vidname = imgname | replace: ".jpg", ".mp4" %}
 <img alt="{{ imgname }}" src="/imgs_objects/{{ imgname }}">
 <p></p>
-<video autoplay loop controls>
+<video autoplay loop controls muted>
 	{{ vidname }}
 	<source src="/imgs_objects/{{ vidname }}" type="video/mp4" />
 </video>
