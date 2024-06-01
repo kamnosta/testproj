@@ -17,7 +17,7 @@ layout: home
 
 		<p>-</p>
 
-		<p>{{ latest.content }}</p>
+		<div>{{ latest.content }}</div>
 	</a>
 </div>
 
