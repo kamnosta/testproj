@@ -1,5 +1,6 @@
 ---
 title: "Magentamess #1"
+has_video: true
 ---
 
 - Material: Paper clay
