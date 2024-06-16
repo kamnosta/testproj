@@ -33,6 +33,7 @@ home_cols:
   - illusts
   - comics
   - schramble
+  - morenothing
   - objects
   - posts
 
@@ -58,6 +59,11 @@ collections:
     order_reverse: false
     desc: "the aimless"
     thumbnail_include: "thumbnail_schramble.html"
+  morenothing:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    thumbnail_include: "thumbnail_morenothing.html"
   withcolor:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
@@ -88,6 +94,11 @@ defaults:
       type: schramble
     values:
       layout: schramble
+  - scope:
+      path: ""
+      type: morenothing
+    values:
+      layout: morenothing  
   - scope:
       path: ""
       type: withcolor
