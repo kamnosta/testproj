@@ -32,8 +32,8 @@ emptyarray: []
 home_cols:
   - illusts
   - comics
-  - schramble
   - morenothing
+  - schramble
   - objects
   - posts
 
