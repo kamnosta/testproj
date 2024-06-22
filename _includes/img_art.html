@@ -21,3 +21,13 @@
 {% assign imgname = target_page.url | split: "/" | last | replace: "-", "_" | append: ext %}
 <img alt="{{ imgname }}" src="/{{ imgs_dir }}/{{ imgname }}"
 	{% if include.render_auto %} class="img-rendering-auto" {% endif %}>
+
+{% if page.has_video %}
+{% assign vidname = imgname | replace: ext, ".mp4" %}
+	<p></p>
+
+	<video autoplay loop controls muted>
+		{{ vidname }}
+		<source src="/{{ imgs_dir }}/{{ vidname }}" type="video/mp4" />
+	</video>
+{% endif %}
