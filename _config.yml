@@ -34,6 +34,7 @@ home_cols:
   - comics
   - morenothing
   - schramble
+  - scenes
   - objects
   - posts
 
@@ -74,7 +75,12 @@ collections:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
     order_reverse: true
-    thumbnail_include: "thumbnail_object.html"
+    thumbnail_include: "thumbnail_art.html"
+  scenes:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    thumbnail_include: "thumbnail_art.html"
   posts:
     order_reverse: true
 
@@ -108,7 +114,12 @@ defaults:
       path: ""
       type: objects
     values:
-      layout: object
+      layout: objects
+  - scope:
+      path: ""
+      type: scenes
+    values:
+      layout: scenes
 
 github: [metadata]
 kramdown:

@@ -2,12 +2,12 @@
 layout: post
 ---
 
-{% assign imgname = page.url | split: "/" | last | replace: "-", "_" | append: ".jpg" %}
-{% assign vidname = imgname | replace: ".jpg", ".mp4" %}
-<img alt="{{ imgname }}" src="/imgs_objects/{{ imgname }}">
+{% include img_art.html imgs_dir="imgs_objects" render_auto=true ext=".jpg" %}
 <p></p>
 
 {% if page.has_video %}
+	{% assign imgname = page.url | split: "/" | last | replace: "-", "_" | append: ".jpg" %}
+	{% assign vidname = imgname | replace: ".jpg", ".mp4" %}
 	<video autoplay loop controls muted>
 		{{ vidname }}
 		<source src="/imgs_objects/{{ vidname }}" type="video/mp4" />
