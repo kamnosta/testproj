@@ -16,9 +16,9 @@ layout: home
 		{% include img_art.html page=latest %}
 
 		<p>-</p>
-
-		<div>{{ latest.content }}</div>
 	</a>
+
+	<div class="latest-content">{{ latest.content }}</div>
 </div>
 
 <style>
@@ -37,5 +37,9 @@ layout: home
 
 	.latest-div a {
 		text-decoration: none;
+	}
+
+	.latest-content a {
+		text-decoration: underline;
 	}
 </style>
