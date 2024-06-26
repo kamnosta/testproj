@@ -2,23 +2,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	{% assign topdomain = "kamnosta.net" %}
+	{% assign topdomain = "https://kamnosta.net" %}
 	<meta property="og:url" content="{{ topdomain | append: page.url }}">
+	<meta property="og:type" content="website">
 
 	{% if page.title %}
-		<title>{{ page.title }}</title>
-
-		<meta property="og:title" content="{{ page.title }}">
-
+		{% assign title = page.title %}
 	{% else %}
-		<title>{{ site.title }}</title>
+		{% assign title = site.title %}
 	{% endif %}
+	<title>{{ title }}</title>
+	<meta property="og:title" content="{{ title }}">
 	
+	{% assign image = topdomain | append: "/favicon.png" %}
+	{% assign description = title %}
 	{% if page.collection %}
 		{% capture thumbnailname %}{% include thumbnail.html doc=page hrefonly=true %}{% endcapture %}
 		{% assign thumbnailname = thumbnailname | strip %}
 		{% if thumbnailname != "" %}
-			<meta property="og:image" content="{{ topdomain | append: thumbnailname }}">
+			{% assign image = topdomain | append: thumbnailname %}
+			{% assign description = page.collection %}
 		{% endif %}
 	{% endif %}
+	<meta property="og:image" content="{{ image }}">
+	<meta property="og:description" content="{{ description }}">
 </head>
