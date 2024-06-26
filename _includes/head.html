@@ -2,9 +2,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	{% assign topdomain = "kamnosta.net" %}
+	<meta property="og:url" content="{{ topdomain | append: page.url }}">
+
 	{% if page.title %}
 		<title>{{ page.title }}</title>
+
+		<meta property="og:title" content="{{ page.title }}">
+
 	{% else %}
 		<title>{{ site.title }}</title>
+	{% endif %}
+	
+	{% if page.collection %}
+		{% capture thumbnailname %}{% include thumbnail.html doc=page hrefonly=true %}{% endcapture %}
+		{% assign thumbnailname = thumbnailname | strip %}
+		{% if thumbnailname != "" %}
+			<meta property="og:image" content="{{ topdomain | append: thumbnailname }}">
+		{% endif %}
 	{% endif %}
 </head>

@@ -1,4 +1,4 @@
-{% comment %} argument: page {% endcomment %}
+{% comment %} argument: doc [, hrefonly] {% endcomment %}
 
 {% assign doc = include.doc %}
 {% assign colname = doc.collection %}
@@ -6,5 +6,13 @@
 {% assign thumbnail_include = col.thumbnail_include %}
 
 {% if thumbnail_include != nil %}
-	{% include {{ thumbnail_include }} page=doc %}
+	{% capture thumbnailname %}{% include {{ thumbnail_include }} page=doc %}{% endcapture %}
+	{% assign thumbnailname = thumbnailname | strip %}
+	{% assign href = "/thumbnails/" | append: thumbnailname %}
+
+	{% if include.hrefonly %}
+		{{ href }}
+	{% else %}
+		<img class="thumbnail" alt="{{ thumbnailname }}" src="{{ href }}">
+	{% endif %}
 {% endif %}
