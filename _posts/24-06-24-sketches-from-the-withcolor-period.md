@@ -50,7 +50,7 @@ pope enough
 *24.02.21*
 ![/imgs_sketches/240221_reach_for_the_sun_sketch.png](/imgs_sketches/240221_reach_for_the_sun_sketch.png)
 
-May I should have dropped the right one
+Maybe I should have dropped the right one
 
 Hate me anatomy
 
