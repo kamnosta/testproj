@@ -1,5 +1,8 @@
 ---
 title: "Blender: Sealed for Eternity"
+
+og_image: "/imgs_posts/240626_sealed_for_eternity.jpg"
+og_description: "opengraph test"
 ---
 
 <img alt="240626_sealed_for_eternity.jpg" src="/imgs_posts/240626_sealed_for_eternity.jpg" class="img-rendering-auto">

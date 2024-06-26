@@ -14,16 +14,24 @@
 	<title>{{ title }}</title>
 	<meta property="og:title" content="{{ title }}">
 	
-	{% assign image = topdomain | append: "/favicon.png" %}
+	{% assign image = "/favicon.png" %}
 	{% assign description = title %}
 	{% if page.collection %}
 		{% capture thumbnailname %}{% include thumbnail.html doc=page hrefonly=true %}{% endcapture %}
 		{% assign thumbnailname = thumbnailname | strip %}
 		{% if thumbnailname != "" %}
-			{% assign image = topdomain | append: thumbnailname %}
+			{% assign image = thumbnailname %}
 			{% assign description = page.collection %}
 		{% endif %}
 	{% endif %}
-	<meta property="og:image" content="{{ image }}">
+
+	{% if page.og_image %}
+		{% assign image = page.og_image %}
+	{% endif %}
+	{% if page.og_description %}
+		{% assign description = page.og_description %}
+	{% endif %}
+
+	<meta property="og:image" content="{{ topdomain | append: image }}">
 	<meta property="og:description" content="{{ description }}">
 </head>
