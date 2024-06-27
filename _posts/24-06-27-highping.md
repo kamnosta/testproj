@@ -12,8 +12,6 @@ og_description: "highping"
 
 took longer than it should
 
-yeah the color is off
-
 <br>
 
 ![/imgs_posts/240627_highping_descs.jpg](/imgs_posts/240627_highping_descs.jpg)
