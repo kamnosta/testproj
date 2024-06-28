@@ -56,7 +56,7 @@ Well this edit was made *after* the published one! It's just de-colored version,
 Oh the other one -- I had several ideas kept to draw, and one of them is similar to this. The clock framework. But this time it'd be actual clock showing the hours. Around them are the vital meter showing how much I am awake, which is activated by caffeine and alcohol -- but alcohol would tremble the line. And in the part where I'd sleep there would be *someone* -- that is, as usual, a white circle with vertical eyes -- saying something like this: "Do you think this would make you interesting? Look at you. What a sad and boring life.". (The point was intentional) And yeah the *"caffeine alcohol clock"* in [Lac Illustrandum](/comics/240514-lac-illustrandum) was this one. But this was scrapped after being delayed by, as usual, a mental breakdown. I actually can't remember what was that one. So the outdated ideas can't be realized, [but some ideas last forever.](https://kamnosta.net/illusts/240624-heart-2-with-my-body-unminded)
 
 ## Sketch of [Meowch!](/illusts/240504-meowch)
-*24.05.04*
+*24.05.03*
 ![/imgs_sketches/240503_meouch_s1.png](/imgs_sketches/240503_meouch_s1.png)
 
 Topics like this come up while riding the bike! And lo the attempt at shading that didn't last!
@@ -75,7 +75,7 @@ Mm! This was taken from [The Exam Is Over Today](/illusts/240424-the-exam-is-ove
 "Now I can waste my time freely"? I always waste my time!
 
 ## Sketch of [L'heure viendra](/illusts/240602-l-heure-viendra)
-*24.06.02*
+*24.05.31*
 ![/imgs_sketches/240531_graben_s0.png](/imgs_sketches/240531_graben_s0.png)
 
 Ah, this is my favorite drawing from this period! Along with [Des larmes furtives](/illusts/240506-des-larmes-furtives).
@@ -174,13 +174,13 @@ Oh God! I remember the emotion I felt after I finished this piece!
 I meant the drawings, but it applies to the music too.
 
 ## Sketch of [Heart #1](/illusts/240610-heart-1)
-*24.06.10*
+*24.06.08*
 ![/imgs_sketches/240608_heart_and_spiders_s02.png](/imgs_sketches/240608_heart_and_spiders_s02.png)
 
 Yes! This too is great. He was intentionally drawn doll-like.
 
 ## Early sketch of [Heart #2: With My Body Unminded](/illusts/240624-heart-2-with-my-body-unminded)
-*24.06.24*
+*24.06.11*
 ![/imgs_sketches/240611_violin_s2.png](/imgs_sketches/240611_violin_s2.png)
 
 As said, should be done right after Heart #1. BTW the pun in the title was not intended.
