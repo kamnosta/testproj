@@ -59,7 +59,7 @@ Oh the other one -- I had several ideas kept to draw, and one of them is similar
 *24.05.04*
 ![/imgs_sketches/240503_meouch_s1.png](/imgs_sketches/240503_meouch_s1.png)
 
-Topics like this comes up while riding the bike! And lo the attempt at shading that didn't last!
+Topics like this come up while riding the bike! And lo the attempt at shading that didn't last!
 
 ## Sketch of [Schramble -10-](/schramble/10)
 *24.05.11*
