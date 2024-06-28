@@ -2,10 +2,10 @@
 title: Sketches from the Minimallines period
 
 og_image: "/imgs_sketches/240531_graben_s0.png"
-og_description: "Minimallines: from 24.03.30 - 26.06.27"
+og_description: "Minimallines: from 24.03.30 - 24.06.27"
 ---
 
-- *Minimallines: from 24.03.30 - 26.06.27*
+- *Minimallines: from 24.03.30 - 24.06.27*
 
 ## Sketch of [Schramble -1-](/schramble/1)
 *24.03.29*
