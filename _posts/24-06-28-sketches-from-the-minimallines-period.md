@@ -183,8 +183,14 @@ Yes! This too is great. He was intentionally drawn doll-like.
 *24.06.11*
 ![/imgs_sketches/240611_violin_s2.png](/imgs_sketches/240611_violin_s2.png)
 
-As said, should be done right after Heart #1. BTW the pun in the title was not intended.
+As said, should've been done right after Heart #1. BTW the pun in the title was not intended.
 
 ---
 
 Well that took longer than I expected!
+
+<style>
+	h2 a {
+		overflow-wrap: anywhere;
+	}
+</style>
