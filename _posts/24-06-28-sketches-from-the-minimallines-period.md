@@ -47,7 +47,7 @@ It was weeks ago, I was riding my bike like any day. And the road happened to me
 
 The PFP I'm still using in the most sites. It was taken from [God Defends This Machine](/comics/240401-god-defends-this-machine). BTW that comic was the first time *the magenta character* from Scramble became my OC. AH! Also. At first his ears were the opposite. They were only "fixed" after [Schramble -5-](/schramble/5).
 
-## An alterative version of [24.04.26._​wine_​into_​my_​coffee](/comics/240426-24-04-26-wine-into-my-coffee)
+## An alterative version of [24.04.26.\_​wine\_​into\_​my\_​coffee](/comics/240426-24-04-26-wine-into-my-coffee)
 *24.04.27*
 ![/imgs_sketches/240427_24.04.26._wine_into_my_coffee_coloralt.png](/imgs_sketches/240427_24.04.26._wine_into_my_coffee_coloralt.png)
 
