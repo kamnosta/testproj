@@ -1,4 +1,4 @@
 ---
-title: 24.04.26._wine_into_my_coffee
+title: 24.04.26._​wine_​into_​my_​coffee
 ---
 Today
