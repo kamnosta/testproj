@@ -2,9 +2,11 @@
 layout: post
 ---
 
-{% include img_art.html %}
+{% if page.noimage == nil or page.noimage == false %}
+	{% include img_art.html %}
 
-<p>-</p>
+	<p>-</p>
+{% endif %}
 
 <div>
 	{{ content }}
